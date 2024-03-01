@@ -771,6 +771,15 @@ footer {
     animation: spin 2s linear infinite;
 }
 
+.pt-36 {
+    padding-top: 36px;
+}
+
+input {
+    outline: none !important;
+    
+}
+
 @keyframes spin {
     0% {
         transform: rotate(0deg);
