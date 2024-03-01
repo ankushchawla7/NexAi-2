@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexAi</title>
+    <link rel="icon" href="./assets/images/png/robot-img.png">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body class="overflow-hidden">
+    <div class="overflow-hidden">
+        <!-- preloader -->
+        <div id="preloader">
+            <div class="loader"></div>
+        </div>
+        <!-- BackToTop -->
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="./assets/images/svg/BackToTopArrow.svg"
+                alt=""></button>
+        <!-- header-start -->
+        <header class="header-bg position-relative z-1 d-flex flex-column">
+            <img src="./assets/images/png/header-bg.gif" alt="" class="position-absolute w-100 h-100 z-n1 op-4">
+            <div class="layer"></div>
+            <img src="./assets/images/png/robot-img.png" alt="" class="position-absolute w-100 z-n1 robot-img">
+            <nav>
+                <div class="custom-container d-flex align-items-center justify-content-end ">
+                    <div class="max-713 d-flex align-items-center justify-content-sm-between justify-content-end w-100">
+                        <ul id="nav-ul" class="d-flex  nav-bar gap-20 align-items-center ps-0 mb-0">
+                            <li><a onclick="movement()" href="/"
+                                    class="d-inline-block text-white position-relative underline">Home</a></li>
+                            <li><a onclick="movement()" href="#marketplace"
+                                    class="d-inline-block text-white position-relative underline">Marketplace</a>
+                            </li>
+                            <li><a onclick="movement()" href="#about"
+                                    class="d-inline-block text-white position-relative underline">About</a>
+                            </li>
+                            <li><a onclick="movement()" href="#nextchat"
+                                    class="d-inline-block text-white position-relative underline">NexChat</a>
+                            </li>
+                        </ul>
+                        <a href="/"
+                            class="btn-padding nexai-btn bg-blue text-white fw-semibold fs-18 d-inline-block">Sign
+                            Up</a>
+                        <div onclick="ToggleNav()" class=" position-relative menu-btn d-sm-none ms-5 z-2">
+                            <span id="line-one"></span>
+                            <span id="line-two" class="my-2"></span>
+                            <span id="line-three"></span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="hero custom-container d-flex flex-column flex-grow-1 justify-content-center align-items-center">
+                <h1 class="max-w-978 text-center mb-0 mx-auto ff-play fs-60 fw-bold h1-leading">NexAi is an advanced
+                    AI-powered
+                    home assistant</h1>
+                <a href="/" class="btn-padding bg-blue mt-27 text-white fw-semibold nexai-btn fs-18 d-inline-block">Sign
+                    Up</a>
+            </div>
+            <div class=" blury-layer position-absolute start-0 bottom-0 w-100"></div>
+        </header>
+        <!-- Home-Assistant-Section-start -->
+        <section id="about" class="pt-75 position-relative">
+            <div class="ellipse assistant-left-ellipse"></div>
+            <div class="custom-container">
+                <div class="row mx-0 align-items-center justify-content-between">
+                    <div class="col-lg-7 mb-4 mb-lg-0 px-0" data-aos="fade-right">
+                        <h2 class="ff-play fs-48 h2-leading">Ai-Powered Home Assistant</h2>
+                        <div class="max-w-609">
+                            <p class="para-leading mb-0">Nexai is an advanced AI-powered home assistant that brings the
+                                future
+                                to
+                                your
+                                fingertips.
+                                With its
+                                ability to engage in
+                                natural, fluent conversations in over 15 languages,</p>
+                            <p class="para-leading my_6">Nexai offers an incredibly futuristic experience. It can take
+                                the
+                                initiative to
+                                ask about
+                                your day,
+                                schedule meetings,
+                                provide timely reminders</p>
+                            <p class="para-leading mb-0">assist with cooking by suggesting ingredients, track your
+                                fitness
+                                and
+                                nutrition
+                                goals, and
+                                even
+                                handle bill payments.</p>
+                        </div>
+                        <a href="/"
+                            class="btn-padding nexai-btn bg-blue text-white fw-semibold fs-18 d-inline-block mt-40">Learn
+                            more</a>
+                    </div>
+                    <div class="col-lg-5 px-0 d-flex justify-content-center justify-content-lg-end"
+                        data-aos="fade-left">
+                        <div>
+                            <img src="./assets/images/png/home-assitant-gif.gif" alt=""
+                                class="w-100 h-100 home-assistant-gif ">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Unique-Features-Section -->
+        <section id="features" class="mt-130 bg-bluish-black ">
+            <div class="custom-container position-relative z-1 bg-bluish-black pt-274 ">
+                <div class="ellipse unique-left-ellipse"></div>
+                <div class="ellipse unique-right-ellipse"></div>
+                <img src="./assets/images/png/globe-gif.gif" alt=""
+                    class="w-100 h-100 mix-blend-screen position-sticky start-0 top-0 ">
+                <div class="position-absolute w-100 top-0 start-0 pt-80 max-h-880  feature-scroll overflow-y-scroll">
+                    <h2 class="ff-play fs-48 h2-leading text-center mb-3">Unique features</h2>
+                    <p class="max-w-517 para-leading text-center mx-auto mb-0">ability to engage in natural, fluent
+                        conversations in
+                        over 15
+                        languages,
+                    </p>
+                    <div class=" row mx-0  justify-content-between gap-4 align-items-center pt-100">
+                        <div
+                            class="col-lg-4 col-md-5 d-flex flex-column align-items-center align-items-md-start col-12 px-0">
+                            <div class="feature-card-one feature-card position-relative">
+                                <img src="./assets/images/png/feature-one.png" alt="/" class="w-100">
+                                <div class=" feature-card-content ">
+                                    <p class="fs-20 fw-semibold mb-0">Remote Access and File Management</p>
+                                </div>
+                                <div class="card-details  position-absolute  start-0 w-100 h-100">
+                                    <div class=" mb-14 fs-20 mb-0 fw-semibold">Remote Access and File Management
+                                    </div>
+                                    <p class="para-leading mb-0">Nexai goes beyond standard home assistants by taking
+                                        proactive initiatives and
+                                        engaging in natural language
+                                        conversations. It communicates with you as if you're talking to a friend,
+                                        providing a truly personalized and immersive
+                                        experience.
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="feature-card-three feature-card position-relative mt-180">
+                                <img src="./assets/images/png/feature-three.png" alt="/" class="w-100 ">
+                                <div class=" feature-card-content ">
+                                    <p class="fs-20 fw-semibold mb-0"> Autonomous and Natural Language Communication</p>
+                                </div>
+                                <div class="card-details  position-absolute  start-0 w-100 h-100">
+                                    <div class=" mb-14 fs-20 mb-0 fw-semibold">Autonomous and Natural Language
+                                        Communication
+                                    </div>
+                                    <p class="para-leading mb-0">Nexai goes beyond standard home assistants by taking
+                                        proactive initiatives and
+                                        engaging in natural language
+                                        conversations. It communicates with you as if you're talking to a friend,
+                                        providing a truly personalized and immersive
+                                        experience.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-lg-4 col-md-5 col-12 px-0 d-flex flex-column align-items-center align-items-md-end mb_n50">
+                            <div class="feature-card-one feature-card position-relative">
+                                <img src="./assets/images/png/feature-two.png" alt="/" class="w-100">
+                                <div class=" feature-card-content">
+                                    <p class="max-w-203 fs-20 mb-0 fw-semibold"> Real-time Home Monitoring</p>
+                                </div>
+                                <div class="card-details  position-absolute  start-0 w-100 h-100">
+                                    <div class="max-w-203 mb-14 fs-20 mb-0 fw-semibold"> Real-time Home Monitoring</div>
+                                    <p class="para-leading">Nexai goes beyond standard home assistants by taking
+                                        proactive initiatives and
+                                        engaging in natural language
+                                        conversations. It communicates with you as if you're talking to a friend,
+                                        providing a truly personalized and immersive
+                                        experience.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="feature-card-three feature-card position-relative mt-180">
+                                <img src="./assets/images/png/feature-four.png" alt="/" class="w-100 ">
+                                <div class=" feature-card-content ">
+                                    <p class="fs-20 fw-semibold mb-0"> Intelligent Contextual Awareness </p>
+                                </div>
+                                <div class="card-details  position-absolute  start-0 w-100 h-100">
+                                    <div class=" mb-14 fs-20 mb-0 fw-semibold"> Intelligent Contextual Awareness
+                                    </div>
+                                    <p class="para-leading mb-0">Nexai goes beyond standard home assistants by taking
+                                        proactive initiatives and
+                                        engaging in natural language
+                                        conversations. It communicates with you as if you're talking to a friend,
+                                        providing a truly personalized and immersive
+                                        experience.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" blury-layer-two  w-100"></div>
+        </section>
+        <!-- Things-with-NexAi -->
+        <section class="thingsWithNexAi pt-60">
+            <h2 class="ff-play fs-48 h2-leading text-center mb-3 mx-auto">Things going easier with NexAi</h2>
+            <p class="para-leading max-w-823 text-center mx-auto mb-0">Sed sit sit sit at laoreet tortor dis euismod in.
+                Viverra
+                arcu semper mauris
+                lorem
+                dignissim vulputate orci. Habitant
+                imperdiet at molestie ipsumpretium in pharetra tincidunt.
+            </p>
+            <div class="slider-section mt-298 ">
+                <div class="responsive">
+                    <div class="slide-one">
+                        <p class="fs-28 ff-play  fw-bold max-w-254 text-center mb-0">NexAi, Turn on light</p>
+                    </div>
+                    <div class="slide-one">
+                        <p class="fs-28 ff-play  fw-bold max-w-254 text-center mb-0">NexAi, Turn on light</p>
+                    </div>
+                    <div class="slide-one">
+                        <p class="fs-28 ff-play  fw-bold max-w-254 text-center mb-0">NexAi, set
+                            alarm of 5:00 am</p>
+                    </div>
+                    <div class="slide-one">
+                        <p class="fs-28 ff-play  fw-bold max-w-254 text-center mb-0">NexAi, measure this table</p>
+                    </div>
+                    <div class="slide-one">
+                        <p class="fs-28 ff-play  fw-bold max-w-254 text-center mb-0">NexAi, Turn on light</p>
+                    </div>
+                    <div class="slide-one">
+                        <p class="fs-28 ff-play  fw-bold max-w-254 text-center mb-0">NexAi, set
+                            alarm of 5:00 am</p>
+                    </div>
+                    <div class="slide-one">
+                        <p class="fs-28 ff-play  fw-bold max-w-254 text-center mb-0">NexAi, Turn on music</p>
+                    </div>
+                    <div class="slide-one">
+                        <p class="fs-28 ff-play  fw-bold max-w-254 text-center mb-0">NexAi, Turn on light</p>
+                    </div>
+                    <div class="slide-one">
+                        <p class="fs-28 ff-play  fw-bold max-w-254 text-center mb-0">NexAi, Turn on light</p>
+                    </div>
+                    <div class="slide-one">
+                        <p class="fs-28 ff-play  fw-bold max-w-254 text-center mb-0">NexAi, set
+                            alarm of 5:00 am</p>
+                    </div>
+                    <div class="slide-one">
+                        <p class="fs-28 ff-play  fw-bold max-w-254 text-center mb-0">NexAi, measure this table</p>
+                    </div>
+                    <div class="slide-one">
+                        <p class="fs-28 ff-play  fw-bold max-w-254 text-center mb-0">NexAi, Turn on light</p>
+                    </div>
+                    <div class="slide-one">
+                        <p class="fs-28 ff-play  fw-bold max-w-254 text-center mb-0">NexAi, set
+                            alarm of 5:00 am</p>
+                    </div>
+                    <div class="slide-one">
+                        <p class="fs-28 ff-play  fw-bold max-w-254 text-center mb-0">NexAi, Turn on music</p>
+                    </div>
+
+
+                </div>
+                <div class="responsive-two" dir="rtl">
+                    <div class="slide-one">
+                        <p class="fs-28 ff-play  fw-bold max-w-254 text-center mb-0">NexAi, Turn on light</p>
+                    </div>
+                    <div class="slide-one">
+                        <p class="fs-28 ff-play  fw-bold max-w-254 text-center mb-0">NexAi, Turn on light</p>
+                    </div>
+                    <div class="slide-one">
+                        <p class="fs-28 ff-play  fw-bold max-w-254 text-center mb-0">NexAi, measure this table</p>
+                    </div>
+                    <div class="slide-one">
+                        <p class="fs-28 ff-play  fw-bold max-w-254 text-center mb-0">NexAi, Turn on light</p>
+                    </div>
+                    <div class="slide-one">
+                        <p class="fs-28 ff-play  fw-bold max-w-254 text-center mb-0">NexAi, Turn on music</p>
+                    </div>
+                    <div class="slide-one">
+                        <p class="fs-28 ff-play  fw-bold max-w-254 text-center mb-0">NexAi, Turn on light</p>
+                    </div>
+                    <div class="slide-one">
+                        <p class="fs-28 ff-play  fw-bold max-w-254 text-center mb-0">NexAi, set
+                            alarm of 5:00 am</p>
+                    </div>
+                    <div class="slide-one">
+                        <p class="fs-28 ff-play  fw-bold max-w-254 text-center mb-0">NexAi, Turn on light</p>
+                    </div>
+                    <div class="slide-one">
+                        <p class="fs-28 ff-play  fw-bold max-w-254 text-center mb-0">NexAi, Turn on light</p>
+                    </div>
+                    <div class="slide-one">
+                        <p class="fs-28 ff-play  fw-bold max-w-254 text-center mb-0">NexAi, measure this table</p>
+                    </div>
+                    <div class="slide-one">
+                        <p class="fs-28 ff-play  fw-bold max-w-254 text-center mb-0">NexAi, Turn on light</p>
+                    </div>
+                    <div class="slide-one">
+                        <p class="fs-28 ff-play  fw-bold max-w-254 text-center mb-0">NexAi, Turn on music</p>
+                    </div>
+                    <div class="slide-one">
+                        <p class="fs-28 ff-play  fw-bold max-w-254 text-center mb-0">NexAi, Turn on light</p>
+                    </div>
+                    <div class="slide-one">
+                        <p class="fs-28 ff-play  fw-bold max-w-254 text-center mb-0">NexAi, set
+                            alarm of 5:00 am</p>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+        <!--Blockchain-section  -->
+        <section id="marketplace" class="position-relative z-1e">
+            <div class="ellipse blockchain-left-ellipse"></div>
+            <div class="ellipse blockchain-right-ellipse    "></div>
+            <div class="custom-container">
+                <div class="d-flex flex-column">
+                    <h2 class="ff-play fs-48 h2-leading mb-3">Blockchain & AI technology</h2>
+                    <p class="para-leading max-w-997 mb-40">Nexai is an advanced home assistant that will revolutionize
+                        the
+                        way
+                        we
+                        interact with
+                        our smart devices at home. Powered
+                        by sophisticated artificial intelligence, it leverages blockchain technology to offer a secure
+                        and
+                        efficient user
+                        experience.
+                    </p>
+                    <p class="ff-play max-w-684 fs-20 mb-0">
+                        By building the software on blockchain, Nexai provides the following advantages
+                    </p>
+                </div>
+                <div class="d-flex flex-column gap-4 blockchain-scroll mt-40 max-h-664 overflow-y-scroll">
+                    <div class="SecurityAndPrivacy">
+                        <div class="row align-items-center mx-0 justify-content-between">
+                            <div class="col-lg-6 px-0">
+                                <div
+                                    class="fs-32 fw-semibold numberic-height d-flex justify-content-center align-items-center">
+                                    1
+                                </div>
+                                <div class="fs-40 ff-play fw-bold mb-3 mt-20">Security and Privacy</div>
+                                <p class="para-leading max-w-538 mb-0">Nexai is an advanced home assistant that will
+                                    revolutionize
+                                    the
+                                    way we interact
+                                    with our smart devices at home. Powered
+                                    by sophisticated artificial intelligence, it leverages blockchain technology to
+                                    offer a
+                                    secure
+                                    and
+                                    efficient user
+                                    experience.</p>
+                            </div>
+                            <div class="col-lg-5 px-0 d-flex justify-content-center d-lg-block">
+                                <img src="./assets/images/png/securityAndPrivacy.png" alt="/" class="max-h-304">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dataManagement bg_blue">
+                        <div class="row align-items-center mx-0 justify-content-between">
+                            <div class="col-lg-6 px-0">
+                                <div
+                                    class="fs-32 fw-semibold numberic-height d-flex justify-content-center align-items-center">
+                                    2
+                                </div>
+                                <div class="fs-40 ff-play fw-bold mt-20 mb-3">Transparent and Reliable Data Management
+                                </div>
+                                <p class="para-leading max-w-538 mb-0">Nexai enables transparent and reliable data
+                                    management
+                                    through
+                                    blockchain. Users can trust that their data is securely
+                                    stored and that they have full control over their digital identities and personal
+                                    information.</p>
+                            </div>
+                            <div class="col-lg-5 d-flex justify-content-center d-lg-block px-0">
+                                <img src="./assets/images/png/dataManagement.png" alt="/" class="max-h-304">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Self-learning">
+                        <div class="row align-items-center mx-0 justify-content-between">
+                            <div class="col-lg-6 px-0">
+                                <div
+                                    class="fs-32 fw-semibold numberic-height d-flex justify-content-center align-items-center">
+                                    3
+                                </div>
+                                <div class="fs-40 ff-play fw-bold mb-3 mt-20">Self-learning and Personalization</div>
+                                <p class="para-leading max-w-538 mb-0">Nexai uses blockchain technology to create a
+                                    self-learning
+                                    platform. By analyzing user data, Nexai learns users'
+                                    preferences and habits over time, resulting in a more personalized and tailored
+                                    experience
+                                    for each user.</p>
+                            </div>
+                            <div class="col-lg-5 d-flex justify-content-center d-lg-block px-0">
+                                <img src="./assets/images/png/selfLearning.png" alt="/" class="max-h-304">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Transparent-Transactions bg_blue">
+                        <div class="row align-items-center mx-0 justify-content-between">
+                            <div class="col-lg-6 px-0">
+                                <div
+                                    class="fs-32 fw-semibold numberic-height d-flex justify-content-center align-items-center">
+                                    4
+                                </div>
+                                <div class="fs-40 ff-play fw-bold mt-20 mb-3">Automated and Transparent Transactions
+                                </div>
+                                <p class="para-leading max-w-538 mb-0">With the help of smart contracts on the
+                                    blockchain,
+                                    Nexai
+                                    can
+                                    automate and ensure the execution of agreements and
+                                    transactions between users and devices. This reduces the need for third-party
+                                    involvement
+                                    and provides increased
+                                    transparency and efficiency in interactions.</p>
+                            </div>
+                            <div class="col-lg-5 d-flex justify-content-center d-lg-block px-0">
+                                <img src="./assets/images/png/transparentTransactions.png" alt="/" class=" max-h-304">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- TokenUtility-section -->
+        <section id="token" class="pb-108 pt-90 position-relative z-1">
+            <div class="ellipse token-left-ellipse"></div>
+            <div class="ellipse token-right-ellipse"></div>
+            <h2 class="ff-play fs-48 h2-leading mb-3 text-center">NexAI Token & utility</h2>
+
+            <div class="custom-container max-h-740 overflow-y-scroll tokens-scroll rounded-32 mt-70 position-relative ">
+                <div
+                    class="row mx-0 align-items-center position-sticky top-0 start-0 justify-content-between oveflow-hidden  token-items token-item-white-bg overflow-hidden rounded-32">
+                    <div class="col-lg-5 d-flex ps-60 pe-lg-0">
+                        <div class="d-flex flex-column align-items-start max-w-390">
+                            <div
+                                class="fs-32 fw-semibold numberic-height d-flex token-number justify-content-center align-items-center">
+                                1
+                            </div>
+                            <div class="fs-32 ff-play mt-30 leading-13125">Purchasing Nexai Products</div>
+                            <p class="para-leading  mb-0 mt-3">Nex AI tokens will be the primary currency for
+                                acquiring
+                                Nexai's
+                                extensive
+                                range of software solutions, hardware
+                                devices, including drones and sensors, and other smart home products available on the
+                                Nexai
+                                marketplace. Users can
+                                confidently make purchases using Nex tokens, enjoying the convenience and flexibility of
+                                a
+                                token-based payment system.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 px-0 position-absolute ist-token-right d-none d-lg-block">
+                        <div class="position-relative translate-token">
+                            <img src="./assets/images/png/ist-token.gif" alt="/"
+                                class="opacity-50 w-100 h-100 ist-token-gif">
+                            <div class="position-absolute w-100 h-100 token-ist-layer"></div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="row mx-0 align-items-center position-sticky top-0 my-4 start-0 justify-content-between oveflow-hidden token-items token-item-bluish-bg overflow-hidden rounded-32">
+                    <div class="col-lg-5 d-flex ps-60 pe-lg-0">
+                        <div class="d-flex flex-column align-items-start ">
+                            <div
+                                class="fs-32 fw-semibold numberic-height token-number d-flex justify-content-center align-items-center">
+                                2
+                            </div>
+                            <div class="fs-32 ff-play mt-30 leading-13125">Accessing Exclusive Content</div>
+                            <p class="para-leading  mb-0 mt-3 max-w-390">By holding Nex AI tokens, users will gain
+                                privileged access to exclusive content within the Nexai platform. These tokens
+                                will unlock premium features, advanced functionalities, and specialized services,
+                                enabling
+                                users to fully explore and
+                                enjoy the enhanced capabilities of Nexai's ecosystem.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 px-0 position-absolute ist-token-right d-none d-lg-block">
+                        <div class="position-relative translate-token">
+                            <img src="./assets/images/png/2nd-token-gif.gif" alt="/"
+                                class="opacity-50 w-100 h-100 ist-token-gif">
+                            <div class="position-absolute w-100 h-100 token-ist-layer"></div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="row mx-0 align-items-center position-sticky top-0 start-0 justify-content-between oveflow-hidden token-items token-items-three token-item-white-bg overflow-hidden rounded-32">
+                    <div class="col-lg-5 d-flex ps-60 pe-lg-0">
+                        <div class="d-flex flex-column align-items-start max-w-390">
+                            <div
+                                class="fs-32 fw-semibold numberic-height token-number d-flex justify-content-center align-items-center">
+                                3
+                            </div>
+                            <div class="fs-32 ff-play mt-30 leading-13125">Loyalty and Rewards</div>
+                            <p class="para-leading  mb-0 mt-3">The Nexai ecosystem will feature a robust loyalty
+                                program,
+                                rewarding users with Nex AI tokens for their active
+                                engagement, ongoing participation, and dedicated usage of Nexai's products and services.
+                                Token holders will have the
+                                opportunity to redeem their accumulated rewards for discounts, incentives, or exclusive
+                                offers, fostering a strong sense
+                                of loyalty and encouraging continued involvement.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 px-0 position-absolute ist-token-right d-none d-lg-block">
+                        <div class="position-relative translate-token">
+                            <img src="./assets/images/png/3rd-token-gif.gif" alt="/"
+                                class="opacity-50 w-100 h-100 ist-token-gif">
+                            <div class="position-absolute w-100 h-100 token-ist-layer"></div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="row mx-0 align-items-center position-sticky top-0 start-0 my-4 justify-content-between oveflow-hidden token-items token-item-bluish-bg overflow-hidden rounded-32">
+                    <div class="col-lg-5 d-flex ps-60 pe-lg-0">
+                        <div class="d-flex flex-column align-items-start ">
+                            <div
+                                class="fs-32 fw-semibold numberic-height d-flex token-number justify-content-center align-items-center">
+                                4
+                            </div>
+                            <div class="fs-32 ff-play mt-30 leading-13125">Participating in Governance</div>
+                            <p class="para-leading  mb-0 mt-3 max-w-390">Nex AI token holders will play a vital role in
+                                the
+                                governance of the Nexai ecosystem. Through voting mechanisms, token
+                                holders will have a direct say in the decision-making process. They can express their
+                                opinions, vote on proposed changes
+                                or improvements, and actively contribute to shaping the future development and direction
+                                of
+                                the Nexai ecosystem.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 px-0 position-absolute ist-token-right d-none d-lg-block">
+                        <div class="position-relative translate-token">
+                            <img src="./assets/images/png/4th-token-gif.gif" alt="/"
+                                class="opacity-50 w-100 h-100 ist-token-gif">
+                            <div class="position-absolute w-100 h-100 token-ist-layer"></div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="row mx-0 align-items-center position-sticky top-0 start-0 mb-4 justify-content-between oveflow-hidden token-items token-item-white-bg overflow-hidden rounded-32">
+                    <div class="col-lg-5 d-flex ps-60 pe-0">
+                        <div class="d-flex flex-column align-items-start max-w-390">
+                            <div
+                                class="fs-32 fw-semibold numberic-height token-number d-flex justify-content-center align-items-center">
+                                5
+                            </div>
+                            <div class="fs-32 ff-play mt-30 leading-13125">Peer-to-Peer Transactions</div>
+                            <p class="para-leading  mb-0 mt-3">Nex AI tokens will enable seamless peer-to-peer
+                                transactions
+                                within the Nexai community. Users will have the ability to
+                                exchange tokens with others for various purposes, such as purchasing pre-owned Nexai
+                                devices, engaging in token trading
+                                activities, or conducting value exchanges directly within the ecosystem, all with the
+                                utmost
+                                security and convenience.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 px-0 position-absolute ist-token-right d-none d-lg-block">
+                        <div class="position-relative translate-token">
+                            <img src="./assets/images/png/5th-token-gif.gif" alt="/"
+                                class="opacity-50 w-100 h-100 ist-token-gif">
+                            <div class="position-absolute w-100 h-100 token-ist-layer"></div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="row mx-0 align-items-center position-sticky top-0 start-0 justify-content-between oveflow-hidden token-items token-item-bluish-bg overflow-hidden rounded-32">
+                    <div class="col-lg-5 d-flex ps-60 pe-lg-0">
+                        <div class="d-flex flex-column align-items-start ">
+                            <div
+                                class="fs-32 fw-semibold numberic-height token-number d-flex justify-content-center align-items-center">
+                                6
+                            </div>
+                            <div class="fs-32 ff-play mt-30 leading-13125">Token Staking and Rewards</div>
+                            <p class="para-leading  mb-0 mt-3 max-w-390">Nex AI tokens will support staking mechanisms,
+                                allowing users to lock up their tokens for a specified period. By staking
+                                their tokens, users will earn additional rewards, such as interest, dividends, or other
+                                incentives, further
+                                incentivizing token holding and fostering long-term engagement and loyalty.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 px-0 position-absolute ist-token-right d-none d-lg-block">
+                        <div class="position-relative translate-token">
+                            <img src="./assets/images/png/6th-token-gif.gif" alt="/"
+                                class="opacity-50 w-100 h-100 ist-token-gif">
+                            <div class="position-absolute w-100 h-100 token-ist-layer"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- WhiteList-Section -->
+        <section id="nextchat" class="mt-80 position-relative z-1">
+            <div class="custom-container">
+                <div class="row items-center mx-0 justify-lg-between justify-content-center align-items-center">
+                    <div class="col-lg-6 col-md-6 col-sm-8 col-12 d-flex justify-content-center px-0"
+                        data-aos="fade-right">
+                        <img src="./assets/images/png/whiteList-gif.gif" alt="/" class="whitelist-gif">
+                    </div>
+                    <div class="col-lg-6  px-0 d-flex justify-content-center justify-content-lg-end"
+                        data-aos="fade-left">
+                        <div class="max-w-482">
+                            <h2 class="ff-play fs-48 h2-leading mb-3">Whitelist & Presale</h2>
+                            <p class="para-leading">For our early supporters, we have curated an exclusive presale
+                                opportunity.
+                                To
+                                ensure your participation, we will be
+                                implementing a whitelist registration process. By signing up on the whitelist and
+                                following
+                                the
+                                provided instructions,
+                                you will secure your spot in this exciting event. To stay informed about the whitelist
+                                opening
+                                and
+                                receive timely
+                                updates, kindly provide us with your email address, and we will notify you accordingly.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ellipse whitelist-ellipse"></div>
+        </section>
+        <!-- StayWithNexAi -->
+        <section id="terms" class="mb-n119 mt-100 position-relative z-1" data-aos="fade-up">
+            <div class="custom-container stayWithNexai-bg d-flex justify-content-center">
+                <div class="max-w-713 d-flex flex-column align-items-center">
+                    <h2 class="ff-play fs-48 h2-leading mb-3 text-center">Get in touch with us</h2>
+                    <p class="para-leading text-center mb-30">For our early supporters, we have curated an exclusive
+                        presale
+                        opportunity. To
+                        ensure your participation, we will be
+                        implementing a whitelist registration process. By signing up on the whitelist and following the
+                        provided
+                        instructions,
+                        you will secure your spot in this exciting event. To stay informed about the whitelist opening
+                        and
+                        receive timely
+                        updates, kindly provide us with your email address, and we will notify you accordingly.</p>
+                    <a href="/" class="btn-padding nexai-btn bg-blue text-white fw-semibold fs-18 d-inline-block">Sign
+                        Up
+                        Now</a>
+
+                </div>
+            </div>
+        </section>
+        <!-- footer-section -->
+        <footer>
+            <div class="custom-container">
+                <div class="row justify-content-between  mx-0">
+                    <div class="col-lg-3 px-0 mb-4 mb-lg-0">
+                        <p class="para-leading max-243">Nullam viverra natoque amet et sed scelerisque viverra fringilla
+                            platea. Ullamcorper.</p>
+                        <div class="d-flex gap-12 align-items-center">
+                            <a href="https://www.facebook.com/" class="social-icon">
+                                <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.65 34.0822L20.65 34.366L20.9316 34.3302C24.8274 33.8345 28.3884 31.8739 30.8906 28.847C33.3929 25.82 34.6487 21.9539 34.4027 18.0343C34.1568 14.1147 32.4276 10.4358 29.5667 7.7454C26.7057 5.05497 22.9276 3.55487 19.0003 3.55L19.0002 3.55C15.0681 3.54707 11.2828 5.04351 8.41566 7.7344C5.54851 10.4253 3.81523 14.1081 3.569 18.0325C3.32277 21.9569 4.58212 25.8275 7.09044 28.8557C9.59877 31.8838 13.1673 33.8417 17.0689 34.3303L17.35 34.3655V34.0822V22.8V22.55H17.1H13.55V19.25H17.1H17.35V19V15.8574C17.35 13.3377 17.6137 12.4623 18.0807 11.5839L18.081 11.5834C18.544 10.7085 19.2598 9.99333 20.1351 9.53107L20.1366 9.53028C20.8177 9.16477 21.6798 8.93519 23.2396 8.83559C23.7965 8.80005 24.5159 8.83783 25.4019 8.95588V12.0981H24.7019C23.8292 12.0981 23.2023 12.1184 22.7366 12.1692C22.2724 12.2197 21.949 12.3022 21.6938 12.4384C21.3927 12.5939 21.1474 12.8393 20.992 13.1405C20.7312 13.6321 20.6519 14.1202 20.6519 15.8555V19V19.25H20.9019H25.3317L24.5067 22.55H20.9019H20.6519L20.6519 22.8L20.65 34.0822ZM19 37.75C8.64437 37.75 0.25 29.3556 0.25 19C0.25 8.64437 8.64437 0.25 19 0.25C29.3556 0.25 37.75 8.64437 37.75 19C37.75 29.3556 29.3556 37.75 19 37.75Z"
+                                        fill="#FCFCFC" stroke="black" stroke-width="0.5" />
+                                </svg>
+
+                            </a>
+                            <a href="https://twitter.com/?lang=en" class="social-icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.0012 1C9.52476 1 1 9.52239 1 20C1 30.4776 9.52476 39 20.0012 39C30.4776 39 39.0024 30.4776 39.0024 20C39.0024 9.52239 30.4776 1 20.0012 1ZM20.0012 37.7344C10.2227 37.7344 2.26793 29.7785 2.26793 20C2.26793 10.2215 10.2227 2.26556 20.0012 2.26556C29.7796 2.26556 37.7344 10.2215 37.7344 20C37.7344 29.7785 29.7796 37.7344 20.0012 37.7344Z"
+                                        fill="#FCFCFC" stroke="#FCFCFC" />
+                                    <path
+                                        d="M30.422 14.1306C30.5534 13.8873 30.6617 13.6322 30.7455 13.3686C30.7842 13.2464 30.785 13.1153 30.7477 12.9926C30.7104 12.8699 30.6368 12.7614 30.5365 12.6814C30.4363 12.6014 30.3141 12.5537 30.1862 12.5446C30.0583 12.5355 29.9306 12.5654 29.82 12.6304C29.2128 12.9911 28.5555 13.2599 27.8695 13.4279C27.0368 12.6763 25.9553 12.2597 24.8336 12.2583C24.2242 12.2588 23.6211 12.3823 23.0606 12.6215C22.5001 12.8606 21.9936 13.2105 21.5716 13.6501C21.1496 14.0898 20.8206 14.6101 20.6046 15.1799C20.3885 15.7497 20.2897 16.3573 20.3141 16.9662C17.6491 16.6307 15.2155 15.2822 13.5182 13.2004C13.4532 13.1215 13.3701 13.0595 13.2759 13.0196C13.1818 12.9797 13.0795 12.9632 12.9776 12.9713C12.8757 12.9794 12.7772 13.0121 12.6906 13.0664C12.604 13.1207 12.5318 13.1951 12.4802 13.2833C12.0915 13.9504 11.8803 14.7059 11.8666 15.4778C11.8529 16.2497 12.0372 17.0122 12.402 17.6926C12.3125 17.7077 12.2266 17.739 12.1484 17.7851C12.0526 17.8462 11.9737 17.9304 11.919 18.03C11.8643 18.1296 11.8356 18.2414 11.8355 18.355C11.8355 19.7 12.4339 20.9347 13.3985 21.7737L13.357 21.8152C13.2842 21.8976 13.2341 21.9975 13.2117 22.1051C13.1892 22.2128 13.1952 22.3244 13.2291 22.429C13.4302 23.0565 13.766 23.6324 14.2131 24.1165C14.6601 24.6006 15.2076 24.9811 15.8171 25.2315C14.5652 25.8422 13.1643 26.0803 11.781 25.9176C11.6388 25.9031 11.4958 25.9362 11.3745 26.0117C11.2531 26.0871 11.1602 26.2008 11.1103 26.3347C11.0624 26.4696 11.0615 26.6168 11.1078 26.7523C11.154 26.8878 11.2447 27.0037 11.3651 27.0812C13.2457 28.2882 15.4334 28.9294 17.668 28.9286C24.9912 28.9286 29.3685 22.98 29.3685 17.2293L29.3673 17.035C30.0771 16.4809 30.6935 15.8168 31.1934 15.0679C31.2691 14.9547 31.3063 14.8201 31.2996 14.6841C31.2928 14.5481 31.2424 14.4178 31.1559 14.3127C31.0693 14.2075 30.9512 14.133 30.819 14.1002C30.6869 14.0674 30.5476 14.0781 30.422 14.1306ZM28.3542 16.2102C28.2682 16.272 28.1991 16.3544 28.1531 16.4499C28.1072 16.5453 28.0858 16.6507 28.0911 16.7565C28.0982 16.9129 28.1018 17.0717 28.1018 17.2281C28.1018 22.3567 24.1996 27.6619 17.6692 27.6619C16.5045 27.6624 15.348 27.4669 14.2482 27.0836C15.5654 26.8312 16.8028 26.2663 17.8564 25.4365C17.959 25.3556 18.0341 25.245 18.0714 25.1199C18.1088 24.9947 18.1065 24.8611 18.065 24.7372C18.0235 24.6134 17.9448 24.5054 17.8396 24.428C17.7344 24.3506 17.6078 24.3076 17.4772 24.3048C16.9663 24.2951 16.4648 24.1654 16.0132 23.9262C15.5616 23.687 15.1725 23.345 14.8774 22.9279C15.1772 22.9077 15.4711 22.858 15.7566 22.7809C15.8949 22.7439 16.0165 22.6612 16.1016 22.5462C16.1867 22.4312 16.2304 22.2908 16.2254 22.1478C16.2205 22.0048 16.1672 21.8677 16.0743 21.7589C15.9814 21.65 15.8544 21.5759 15.714 21.5486C15.1369 21.4312 14.6026 21.1591 14.1683 20.7615C13.7339 20.3639 13.4158 19.8556 13.248 19.2912C13.5632 19.3706 13.8867 19.4168 14.2102 19.4274C14.4887 19.4263 14.747 19.2556 14.8335 18.9878C14.92 18.72 14.8181 18.4249 14.5823 18.2685C14.0248 17.897 13.5954 17.3625 13.353 16.7379C13.1106 16.1133 13.0669 15.4291 13.2279 14.7788C15.2862 16.8908 18.0656 18.1484 21.0108 18.3005C21.2194 18.3017 21.4019 18.2271 21.5287 18.0742C21.6555 17.9213 21.7041 17.7187 21.659 17.5244C21.497 16.8264 21.5695 16.0945 21.8653 15.4419C22.1611 14.7893 22.6638 14.2524 23.2955 13.9142C23.9272 13.5761 24.6528 13.4556 25.3599 13.5714C26.067 13.6872 26.7162 14.0328 27.2071 14.5548C27.2807 14.6333 27.373 14.6918 27.4754 14.7247C27.5778 14.7577 27.687 14.7641 27.7925 14.7432C27.988 14.7041 28.1812 14.6591 28.372 14.6069C28.2859 14.6713 28.1966 14.731 28.1042 14.7859C27.9813 14.8611 27.8877 14.976 27.8389 15.1116C27.79 15.2472 27.7888 15.3953 27.8355 15.5317C27.8821 15.668 27.9738 15.7844 28.0955 15.8617C28.2171 15.9389 28.3614 15.9724 28.5047 15.9566L28.7203 15.9294C28.6016 16.0272 28.4795 16.1209 28.3542 16.2102Z"
+                                        fill="#FCFCFC" />
+                                </svg>
+                            </a>
+                            <a href="https://web.telegram.org/" class="social-icon">
+                                <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M30.4026 11.3979L5.70264 19.9479L14.2526 22.7979M30.4026 11.3979L14.2526 22.7979M30.4026 11.3979L22.8026 31.3479L14.2526 22.7979"
+                                        stroke="#FCFCFC" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M37.0024 19C37.0024 28.9414 28.9439 37 19.0024 37C9.06103 37 1.00244 28.9414 1.00244 19C1.00244 9.05859 9.06103 1 19.0024 1C28.9439 1 37.0024 9.05859 37.0024 19Z"
+                                        stroke="#FCFCFC" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 px-0 d-flex flex-wrap justify-content-between gap-4 px-0">
+                        <ul class="mb-0 ps-0 d-flex flex-column gap-10">
+                            <li class="text-white">Quick links</li>
+                            <li><a href="" class=" op7 d-inline-block text-white position-relative underline">Home</a>
+                            </li>
+                            <li><a href="#features"
+                                    class=" op7 d-inline-block text-white position-relative underline">Features</a></li>
+                            <li><a href="#marketplace"
+                                    class=" op7 d-inline-block text-white position-relative underline">Marketplace</a>
+                            </li>
+                            <li><a href="#token"
+                                    class=" op7 d-inline-block text-white position-relative underline">Tokens</a>
+                            </li>
+                            <li><a href="#nextchat"
+                                    class=" op7 d-inline-block text-white position-relative underline">NexChat</a></li>
+                            <li><a href="#about"
+                                    class=" op7 d-inline-block text-white position-relative underline">About</a>
+                            </li>
+                        </ul class="mb-0 ps-0">
+                        <ul class="d-flex flex-column gap-10 ps-0 mb-0">
+                            <li class="text-white">Information's</li>
+                            <li><a href="#contact"
+                                    class=" op7 d-inline-block text-white position-relative underline">Contact</a></li>
+                            <li><a href="#features"
+                                    class=" op7 d-inline-block text-white position-relative underline">Features</a></li>
+                            <li><a href="#phone"
+                                    class=" op7 d-inline-block text-white position-relative underline">Phone</a>
+                            </li>
+                            <li><a href="#terms"
+                                    class=" op7 d-inline-block text-white position-relative underline">terms</a>
+                            </li>
+                            <li><a href="#terms"
+                                    class=" op7 d-inline-block text-white position-relative underline">Privacy</a></li>
+                        </ul>
+                        <div>
+                            <p class="fs-24 ff-play max-w-284">Ready to get started Talk to us Today</p>
+                            <div class="input-box">
+                                <input type="email" placeholder="E-mail"
+                                    class="bg-transparent input-padding border-0 outline-0">
+                                <a href="/"
+                                    class="btn-padding nexai-btn bg-blue text-white fw-semibold fs-18 d-inline-block">Get
+                                    Started</a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="footer-line"></div>
+                    <p class="op7 text-center py-20 mb-0">@Copyright.nexai</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            duration: 1000
+        });
+    </script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
