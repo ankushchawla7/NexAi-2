@@ -771,13 +771,11 @@ footer {
     animation: spin 2s linear infinite;
 }
 
-.pt-36 {
-    padding-top: 36px;
-}
+
 
 input {
     outline: none !important;
-    
+
 }
 
 @keyframes spin {
@@ -960,6 +958,10 @@ input {
 
     .thingsWithNexAi {
         background-size: 100% 100% !important;
+    }
+
+    .pt-36 {
+        padding-top: 36px;
     }
 
     .ps-60 {
